@@ -119,7 +119,7 @@ Because `form_for` is bound directly with the `Post` model, we need to pass the 
 ```ruby
 @post.update(params.require(:post).permit(:title, :description))
 ```
-
+`requi
 So, why do we need to `require` the `post` model? If you look at the old form, the `params` would look something like this:
 
 ```
